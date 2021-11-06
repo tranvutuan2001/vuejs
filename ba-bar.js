@@ -13,8 +13,6 @@ setInterval(() => {
   const now1 = new Date().getTime();
   let left = (countDownDate - now1) / 1000;
 
-  let gone = left_org - left;
-
   width_full = (left / duration) * 100;
   console.log(width_full);
 
