@@ -15,7 +15,8 @@ setInterval(() => {
 
   let gone = left_org - left;
 
-  width_full -= (gone / duration) * 100;
+  width_full = (left / duration) * 100;
+  console.log(width_full);
 
   document.getElementById("hp").style.width = width_full.toString() + "%";
 }, 1000);
