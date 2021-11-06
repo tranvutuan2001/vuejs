@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  nginx:
+    image: "nginx:1.18.0-alpine"
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./app.css:/home/tuan/app/app.css
+      - ./app.js:/home/tuan/app/app.js
+      - ./index.html:/home/tuan/app/index.html
