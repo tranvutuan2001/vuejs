@@ -1,4 +1,3 @@
-const countDownDate = new Date("Nov 27, 2021 00:00:00").getTime();
 
 new Vue({
   el: "#app",
@@ -13,6 +12,7 @@ new Vue({
     countDownTimer() {
       setTimeout(() => {
         if (this.days > 0 || this.hours > 0 || this.minutes > 0 || this.seconds > 0 || this.isThisFirstRun) {
+          const countDownDate = new Date("Nov 27, 2021 00:00:00").getTime();
           const now = new Date().getTime();
           this.isThisFirstRun = false;
           // Find the distance between now and the count down date
